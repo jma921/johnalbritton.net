@@ -1,0 +1,194 @@
+$icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/bootstrap/";
+// bower:scss
+@import "bootstrap-sass-official/assets/stylesheets/_bootstrap.scss";
+// endbower
+
+
+* {
+  box-sizing: border-box;
+}
+
+.browsehappy {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0;
+}
+
+/* Space out content a bit */
+body {
+  padding: 0;
+  margin: 0;
+  line-height: 2em;
+}
+
+/* Everything but the jumbotron gets side spacing for mobile first views */
+.header,
+.marketing,
+.footer {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+/* Custom page footer */
+footer {
+  margin-top: 50px;
+  color: #777;
+  border-top: 1px solid #e5e5e5;
+  p {
+    padding: 15px 0 0 15px;
+  }
+}
+
+.container {
+  padding-top: 3%;
+}
+
+.social-links {
+  text-align: center;
+}
+
+.fa-social {
+  color: #00A6F8;
+}
+
+.social {
+  margin-top: 3.0em;
+  &:hover {
+    box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.12), 0 1px 6px 0 rgba(0, 0, 0, 0.12);;
+  }
+}
+
+/* Main marketing message and sign up button */
+.jumbotron {
+  text-align: center;
+  border-bottom: 1px solid #e5e5e5;
+  margin-top: 40px;
+}
+
+/* Supporting marketing content */
+.marketing {
+  margin: 60px 0;
+  p + h4 {
+    margin-top: 28px;
+  }
+}
+
+#portfolio div a img {
+  border-radius: 3%;
+  &:hover {
+    box-shadow: 0 12px 15px 0 rgba(0,0,0,.24),0 17px 50px 0 rgba(0,0,0,.19);
+  }
+}
+
+.portfolio-nav {
+  list-style: none;
+  text-align: center;
+  padding-bottom: 2%;
+}
+#portfolio .mix {
+  display: none;
+}
+.portfolio-item {
+  padding: 15px;
+  border-radius: 3%;
+}
+
+/*#portfolio {
+  height: 700px;
+}*/
+
+#portfolio:after{
+  content: '';
+  display: inline-block;
+  width: 100%;
+}
+
+.fancybox-title {
+    padding: 0 0 10px 0;
+    font-size: 1.2em;
+    text-align: center;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.428571429;
+    font-weight: 300;
+    a {
+      color: gray;
+      text-decoration: none;
+      padding-left: 30px;
+      &:hover {
+        color: #00A6F8;
+      }
+    }
+}
+
+#contact {
+  padding: 20px 0;
+  margin: 30px 0 50px 0;
+  text-align: center;
+}
+
+.myClose {
+  background: none;
+}
+
+.remove {
+  display: none;
+}
+
+.label {
+  margin: 0 .4em 0 0;
+}
+
+button{
+  display: inline-block;
+  border: 0;
+  font-size: 16px;
+  font-weight: 300;
+  cursor: pointer;  
+  .btn {
+    padding: .4em 3em;
+  }
+}
+
+button.btn.btn-flat.btn-info.filter.active {
+  background-color: #00A6F8;
+  color: white;
+  box-shadow: 0 1px 6px 0 rgba(0,0,0,.12),0 1px 6px 0 rgba(0,0,0,.12);
+}
+
+
+.portfolio-container {
+  padding-top: 3%;
+}
+
+@media screen and (max-width: 762px) {
+  #portfolio {
+    text-align: center;
+  }
+}
+
+/* Responsive: Portrait tablets and up */
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 730px;
+  }
+
+  /* Remove the padding we set earlier */
+  .header,
+  .marketing,
+  .footer {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  /* Space out the masthead */
+  .header {
+    margin-bottom: 30px;
+  }
+
+  /* Remove the bottom border on the jumbotron for visual effect */
+  .jumbotron {
+    border-bottom: 0;
+  }
+}
